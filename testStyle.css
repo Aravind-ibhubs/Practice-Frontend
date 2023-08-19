@@ -1,0 +1,52 @@
+div > p {
+    background: red;
+    color: rgb(6, 79, 6);
+    font-weight: 300;
+    font-size: medium;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 15px;
+}
+body > p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body > div > a {
+    background-color: burlywood;
+    padding: 2px;
+    border-width: 5px;
+    border-radius: 10px;
+}
+.button-container {
+    width: 50vw;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.titleOfPage {
+    padding: 10px;
+    background-color: rgb(211, 231, 129);
+    color: black;
+    font-style: unset;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.button-class {
+    background-color: rgb(166, 166, 232);
+    color: black;
+    padding: 10px;
+    border-width: 5px;
+}
+.mark-class {
+    background-color: aqua;
+    padding: 0.009cm;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

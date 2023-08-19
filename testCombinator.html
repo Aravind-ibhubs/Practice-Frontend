@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Style combinator</title>
+        <link rel="stylesheet" href="testStyle.css" />
+    </head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        body > p {
+            background-color: rgb(202, 9, 125);
+            color:rgb(60, 55, 55);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 6px;
+        }
+        body p {
+            background-color: brown;
+            color: rgb(133, 163, 13);
+        }
+        p + h3 {
+            background-color: aqua;
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        p ~ h3 {
+            background-color: rgb(109, 16, 239);
+            color: rgb(243, 12, 12);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+    <body>
+        <h3>Universal facts</h1>
+        <p>Mahatma atma</p>
+        <p>Prushu pathi arundathi ki one side lover.</p>
+        <h3>Amreshi puri is a marriage pantulu.Try to do marriage for arundathi and pashu pathi.</h3>
+        <h3>Sunny leone age is 90.But still virgin</h3>
+        <h3>All porn stars are virgins forever</h3>
+        <div>
+            <p>sivaji shinde to pashu pathi: Gari lo niku teliyani buthalu unnay.</p>
+            <p>arundathi: nuvvu nannu emi cheyya levu ra.</p>
+            <h3>Pashu pasthi to arundathi: Nijam kada.</h3>
+            <h3>arundathi to pashu pathi: I know, u don't have matter.</h3>
+            <h3>pashu pathi: adhi nuvve cheppali</h3>
+        </div>
+        <div class="button-container">
+            <a class="button-class" href="testing1.html">First page</a>
+            <a class="button-class" href="testing2.html">Second page</a>
+        </div>
+    </body>
+</html>
