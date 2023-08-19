@@ -3,36 +3,36 @@
     <head>
         <title>Style combinator</title>
         <link rel="stylesheet" href="testStyle.css" />
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            body > p {
+                background-color: rgb(202, 9, 125);
+                color:rgb(60, 55, 55);
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                padding: 6px;
+            }
+            body p {
+                background-color: brown;
+                color: rgb(133, 163, 13);
+            }
+            p + h3 {
+                background-color: aqua;
+                color: black;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            p ~ h3 {
+                background-color: rgb(109, 16, 239);
+                color: rgb(243, 12, 12);
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+        </style>
     </head>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-        body > p {
-            background-color: rgb(202, 9, 125);
-            color:rgb(60, 55, 55);
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            padding: 6px;
-        }
-        body p {
-            background-color: brown;
-            color: rgb(133, 163, 13);
-        }
-        p + h3 {
-            background-color: aqua;
-            color: black;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-        p ~ h3 {
-            background-color: rgb(109, 16, 239);
-            color: rgb(243, 12, 12);
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-    </style>
     <body>
         <h3>Universal facts</h1>
         <p>Mahatma atma</p>
