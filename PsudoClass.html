@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Psudo class html</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="testStyle.css">
+        <style>
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            h1::first-letter {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 32px;
+                color: red;
+            }
+            p::first-line {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 15px;
+                color: white;
+                background-color: black;
+            }
+            h1::before {
+                content: "Title : ";
+            }
+            h1::after {
+                content: ", END of picture";
+            }
+            #desc::selection {
+                background-color: rgb(17, 231, 159);
+                color: red;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            #desc {
+                background-color: blanchedalmond;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="movieI">
+            <h1>The Lion King</h1>
+            <h1>Child labour of animals</h1>
+            <p id="desc">
+                Plans for a remake of 1994's The Lion King were confirmed in September 2016 with
+                 Favreau attached to directed following box office successes for Disney remakes 
+                 such as The Jungle Book (2016), which was also directed by Favreau. Disney hired 
+                 Nathanson to write the screenplay in October 2016. Favreau was inspired by certain roles 
+                 of characters in the Broadway adaptation, and developed upon elements of the original 
+                 film's story. Much of the main cast signed in early 2017, and principal photography began 
+                 in mid-2017 on a blue screen stage in Los Angeles. The "virtual-reality tools" utilized in 
+                 The Jungle Book's cinematography were used to a greater degree during filming of The Lion King.
+            </p>
+            <h1>Nani's acts as a child lion</h1>
+            <div class="button-container">
+                <a class="button-class" href="testing1.html">Home</a>
+                <a class="button-class" href="testCombinator.html" target="_blank">Combinator style</a>
+                <a class="button-class" href="testing2.html">Page 2</a>
+            </div>
+        </div>
+    </body>
+</html>
