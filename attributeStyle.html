@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Attribute Selectors</title>
+        <style>
+            body {
+                min-height: 50vh;
+                max-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            p[title] {
+                text-transform: capitalize;
+            }
+            p[title = "mari"]::first-letter {
+                background-color: rgb(109, 109, 201);
+                color: black;
+                font-style: oblique;
+                padding: 3px;
+            }
+            p[title ~= "mari"] {
+                background-color: aqua;
+                color: blue;
+                padding: 5px;
+            }
+            p[title |= "ter"] {
+                background-color: blanchedalmond;
+                color:rgb(232, 25, 25);
+            }
+            h1[title ^= "head"] {
+                background-color: antiquewhite;
+                color: blue;
+            }
+            h3[title *= "ser"] {
+                background-color: azure;
+                color: blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 title="headmaster">The Important date of life</h1>
+        <h1 title="head">Contacting good person for sad incidents</h1>
+        <p title="mari biirth">Birth Day: Should registered under records</p>
+        <p title="mari">Marriage Day of previous lovers</p>
+        <p title="ter-mi">Freshers day of college girls</p>
+        <p title="ter">Freedom oil day</p>
+        <h3 title="monisert">Data structure for data</h3>
+        <h3 title="ser">Alogarithm is time</h3>
+    </body>
+</html>
+
